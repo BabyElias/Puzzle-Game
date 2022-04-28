@@ -13,6 +13,11 @@
 ## Video Demo :
 
 https://user-images.githubusercontent.com/95405559/164772570-8b3651f1-3978-4b88-9c43-ee4445f96702.mp4
+<br>
+Update - New Layout<br>
+![capture screen](https://user-images.githubusercontent.com/95405559/165681412-94c00f53-47fc-4bb9-bdc5-edb1fff15081.JPG)
+
+
 
 
 
