@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/95405559/164772570-8b3651f1-3978-4b88-
 
 ## Deployed Links :
 Please Note : 
-- This website is best viewable on PC/Laptop(1200x858)
+- This website is fully responsive on all screen-sizes.
 
  
 ```sh
