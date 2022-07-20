@@ -13,7 +13,7 @@ window.onload = function() {
 
   for (let r = 0; r < rows; r++) {
     for (let c = 0; c < columns; c++) {
-      //<img>
+      
       let tile = document.createElement("img");
       tile.src = "./images/blank.jpg";
       q++;
@@ -26,13 +26,13 @@ window.onload = function() {
       tile.addEventListener("drop", dragDrop);
       tile.addEventListener("dragend", dragEnd);
 
-      document.getElementById("board").append(tile); //Appended tiles with BLANK image on our blank canvas i.e Board
+      document.getElementById("board").append(tile);    //Appended tiles with BLANK image on our blank canvas i.e Board
 
 
     }
   }
 
-  //pieces
+  //PIECES
 
 
   let pieces = [];
