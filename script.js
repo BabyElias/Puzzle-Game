@@ -26,7 +26,7 @@ window.onload = function() {
       tile.addEventListener("drop", dragDrop);
       tile.addEventListener("dragend", dragEnd);
 
-      document.getElementById("board").append(tile);
+      document.getElementById("board").append(tile); //Appended tiles with BLANK image on our blank canvas i.e Board
 
 
     }
@@ -37,23 +37,23 @@ window.onload = function() {
 
   let pieces = [];
   for (let i = 1; i <= rows * columns; i++) {
-    pieces.push(i.toString());
+    pieces.push(i.toString());                          //Pushed numbers from 1-25 in Array : pieces
 
 
   }
   pieces.reverse();
   for (let i = 0; i < pieces.length; i++) {
-    let j = Math.floor(Math.random() * pieces.length);
+    let j = Math.floor(Math.random() * pieces.length);  //Generates Randomised indices i.e a number between  0-24 
 
-    //swap
+    //swapping the element at present index, with the element at randomised index j                                                    
     let tmp = pieces[i];
-    pieces[i] = pieces[j];
+    pieces[i] = pieces[j];                           
     pieces[j] = tmp;
   }
 
   for (let i = 0; i < pieces.length; i++) {
     let tile = document.createElement("img");
-    tile.src = "./images/" + pieces[i] + ".jpeg";
+    tile.src = "./images/" + pieces[i] + ".jpeg";       // appending the picture pieces according to their corresponding number in the array :Pieces ( which had been randomised)
 
     //DRAG FUNCTIONALITY
     tile.addEventListener("dragstart", dragStart);
@@ -135,7 +135,7 @@ function dragEnd() {
   if (isWin()) {
     popUp.style.top = "50%";
     overlayy.style.display = "block";
-    console.log("You won");
+    //console.log("You won");
   }
 
 }
